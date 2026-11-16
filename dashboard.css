@@ -1,0 +1,200 @@
+ body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f7f6;
+    color:#2b2b2b;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:190px;
+    height:100vh;
+    position:fixed;
+    background:linear-gradient(180deg,#1b5e20,#4e342e);
+    padding:20px;
+    color:white;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin:6px 0;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateX(5px);
+}
+
+/* MAIN */
+.main{
+    margin-left:260px;
+    padding:25px;
+}
+
+/* PAGE HEADER */
+h1{
+    color:#1b5e20;
+}
+
+/* CARDS GRID */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+/* CARD DESIGN */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-left:5px solid #4e342e;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* BUTTONS */
+button{
+    background:#2e7d32;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1b5e20;
+    transform:scale(1.05);
+}
+
+/* TABLES */
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+table th{
+    background:#4e342e;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+}
+
+/* LOGIN STYLE SUPPORT */
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(120deg,#1b5e20,#4e342e);
+}
+
+.glass-box{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:15px;
+    color:white;
+    width:320px;
+    text-align:center;
+}
+/* ===================== */
+/* 🌙 DARK MODE */
+/* ===================== */
+
+body.dark-mode{
+    background:#121212;
+    color:#e0e0e0;
+}
+
+/* SIDEBAR */
+body.dark-mode .sidebar{
+    background:linear-gradient(180deg,#0d3b0d,#2b1d14);
+}
+
+/* MAIN */
+body.dark-mode .main{
+    background:#121212;
+}
+
+/* CARDS */
+body.dark-mode .card{
+    background:#1e1e1e;
+    color:#e0e0e0;
+    box-shadow:0 6px 18px rgba(0,0,0,0.5);
+}
+
+/* TABLES */
+body.dark-mode table th{
+    background:#2b1d14;
+}
+
+body.dark-mode table td{
+    border-bottom:1px solid #333;
+}
+
+/* BUTTONS */
+body.dark-mode button{
+    background:#2e7d32;
+}
+
+body.dark-mode button:hover{
+    background:#1b5e20;
+}
+/* PREMIUM HEADER */
+.premium-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#1b5e20,#4e342e);
+    color:white;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(10,0,0,.15);
+}
+
+#clock{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* GLASS CARD */
+.glass{
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(10px);
+}
+
+/* BUTTONS */
+button{
+    margin:5px;
+}
+
+/* PROGRESS */
+progress{
+    width:100%;
+    height:12px;
+    margin-bottom:15px;
+}
